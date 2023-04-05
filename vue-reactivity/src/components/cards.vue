@@ -1,18 +1,20 @@
 <template>
   <div class="product">
-    <img :src="props.img" :alt="props.name" />
-    <h3>{{ props.name }}</h3>
-    <h4>{{ props.group }}</h4>
-    <h5>{{ props.price }}</h5>
+    <img :src="img" :alt="name" />
+    <h3>{{ name }}</h3>
+    <h4>{{ group }}</h4>
+    <h5>{{ price }}</h5>
   </div>
 </template>
 
-<script setup>
+<script>
 import { defineProps } from "vue";
-defineProps({
-  name: String,
-  group: String,
-  price: String,
-  img: String,
-});
+export default {
+  props: {
+    name: String,
+    group: String,
+    price: String,
+    img: String,
+  },
+};
 </script>

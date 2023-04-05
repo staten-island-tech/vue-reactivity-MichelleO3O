@@ -2,6 +2,7 @@
   <div class="title"><h1>Album Shop</h1></div>
   <cards
     v-for="(album, index) in albums"
+    :key="album"
     :name="album.name"
     :group="album.group"
     :price="album.price"
