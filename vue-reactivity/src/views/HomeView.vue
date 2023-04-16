@@ -1,14 +1,16 @@
 <template>
   <div class="title"><h1>Album Shop</h1></div>
-  <cards
-    v-for="(album, index) in albums"
-    :key="album"
-    :name="album.name"
-    :group="album.group"
-    :price="album.price"
-    :img="album.img"
-  >
-  </cards>
+  <div class="">
+    <cards
+      v-for="(album, index) in albums"
+      :key="album"
+      :name="album.name"
+      :group="album.group"
+      :price="album.price"
+      :img="album.img"
+    >
+    </cards>
+  </div>
 </template>
 
 <script setup>
@@ -86,5 +88,6 @@ const albums = [
 
 <style lang="css" scoped>
 .title {
+  font-size: 40px;
 }
 </style>

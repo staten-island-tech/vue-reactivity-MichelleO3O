@@ -18,3 +18,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.product {
+  width: 60%;
+  margin-left: 10%;
+}
+
+img {
+  width: 80%;
+}
+</style>
